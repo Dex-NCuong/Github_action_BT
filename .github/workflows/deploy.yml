@@ -22,7 +22,7 @@ jobs:
 
       # Bước 3: Đăng nhập vào Docker Hub bằng lệnh trực tiếp
       - name: Log in to Docker Hub
-        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "nhatcuong1208" --password-stdin
 
       # Bước 4: Build image và Push lên Docker Hub (có tag)
       - name: Build and Push Docker Image
