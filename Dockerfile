@@ -1,5 +1,5 @@
 # --- GIAI ĐOẠN 1: BUILD ---
-FROM maven:3.9.11-eclipse-temurin-25 AS builder
+FROM maven:3.9.9-eclipse-temurin-21 AS builder
 
 WORKDIR /app
 
@@ -9,7 +9,7 @@ COPY . .
 RUN mvn package -DskipTests
 
 # --- GIAI ĐOẠN 2: RUN ---
-FROM eclipse-temurin:25-jre-jammy
+FROM eclipse-temurin:21-jre-jammy
 
 WORKDIR /app
 
