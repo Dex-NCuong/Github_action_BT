@@ -1,0 +1,30 @@
+# Thư mục build output (sẽ được build lại trong container)
+target/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.classpath
+*.project
+*.settings/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dockerfile itself (không cần copy vào)
+Dockerfile
+.dockerignore
+
+# README
+*.md
+HELP.md
