@@ -31,6 +31,6 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/daonhatcuong-springboot:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/daonhatcuong-springboot:${{ github.sha }}
+            nhatcuong1208/daonhatcuong-springboot:latest
+            nhatcuong1208/daonhatcuong-springboot:${{ github.sha }}
 
