@@ -2,7 +2,7 @@ services:
   app-java:                   # Tên dịch vụ tự đặt
     build: .                  # Tìm Dockerfile ở thư mục hiện tại để build
     ports:
-      - "8080:8080"           # Mở cổng cho sinh viên truy cập localhost:8080
+      - "8080:80"             # Mở cổng cho sinh viên truy cập localhost:8080 (map vào 80 bên trong container)
     depends_on:
       - db-mysql              # Chờ DB sẵn sàng rồi mới chạy App
     environment:
